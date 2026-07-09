@@ -30,7 +30,13 @@ export default function Contact() {
           delay={340}
           from="translateY(24px)"
         >
-          <a href="mailto:shreyakatiyar21@gmail.com">shreyakatiyar21@gmail.com</a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=shreyakatiyar21@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            shreyakatiyar21@gmail.com
+          </a>
           <a href="https://linkedin.com/in/shreyakat" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
@@ -43,7 +49,7 @@ export default function Contact() {
         </Reveal>
 
         <footer className="footer">
-          made with a little too much love, by Shreya Katiyar
+          made with so much love, by Shreya Katiyar
           <br />
           <span className="footer-fine">© {new Date().getFullYear()} · Computer Science + Informatics @ UC Irvine</span>
         </footer>
