@@ -7,10 +7,11 @@ const STARS = [
 ];
 
 const FACTS = [
-  { label: "Location", value: "[ City, Country ]" },
-  { label: "Education", value: "[ Your School ]" },
-  { label: "Focus", value: "[ Your Area of Focus ]" },
-  { label: "Status", value: "[ Your Current Status ]" },
+  { label: "Location", value: "Irvine, CA (open to relocation)" },
+  { label: "Education", value: "UC Irvine" },
+  { label: "Focus", value: "Computer Science + Innovation & Entrepreneurship" },
+  { label: "Status", value: "New Grad" },
+  { label: "Honors", value: "President's Volunteer Service Award (Gold)" },
 ];
 
 export default function About() {
@@ -23,16 +24,21 @@ export default function About() {
         </Reveal>
 
         <Reveal as="h2" className="about-headline" delay={100} from="translateY(34px)">
-          [ A one-line, italic-headline statement about your curiosity or
-          drive. ]
+          building meaningful, data-driven experiences that blend creativity
+          with logic.
         </Reveal>
 
         <Reveal as="p" className="about-bio" delay={200} from="translateY(28px)">
-          [ Write two or three sentences introducing yourself — who you are,
-          what you're studying or working on, and what draws you to your
-          field. You can{" "}
-          <span className="highlight">highlight a key fact</span> or two,
-          like a graduation date or achievement, the way this sentence does. ]
+          I'm a{" "}
+          <span className="highlight">Computer Science + Innovation & Entrepreneurship</span>{" "}
+          graduate of the University of California, Irvine, with hands-on
+          experience across AI/ML, full-stack development, and data
+          analytics. I've built{" "}
+          <span className="highlight">LLM-powered apps with RAG pipelines</span>
+          , developed NLP-based market intelligence tools, and shipped
+          responsive web apps with React, Python, and SQL — and I love
+          nothing more than{" "}
+          <span className="highlight">solving a good problem</span>.
         </Reveal>
 
         <div className="about-cards">
@@ -51,8 +57,11 @@ export default function About() {
           <Reveal className="card card-looking" delay={100} from="translateY(30px)">
             <p className="script-label script-label-dark">what I'm looking for —</p>
             <p className="card-looking-text">
-              [ A sentence about the roles, internships, or opportunities
-              you're seeking, and what you hope to bring to them. ]
+              I'm a new grad looking for a role that combines my business
+              mindset with technical skills — think{" "}
+              <strong>Product Management or Solutions Engineering</strong>
+              . I love solving problems, and I'm open to relocating beyond
+              Irvine, CA for the right opportunity.
             </p>
           </Reveal>
         </div>

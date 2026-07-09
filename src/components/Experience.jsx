@@ -12,18 +12,46 @@ const GROUPS = [
     accent: "the day to day",
     roles: [
       {
-        period: "[ Month Year ] — Present",
-        org: "[ Organization ] · [ Type ] · [ Location ]",
-        title: "[ Job Title ]",
+        period: "Jan 2026 — Present",
+        org: "Prenostik · Full-time · On-site",
+        title: "AI Lead (Senior Capstone)",
         description:
-          "[ One or two lines on your key responsibilities and what you accomplished in this role. ]",
+          "Led development of an AI-powered RAG chatbot from the ground up for UC Irvine's Donald Bren School of ICS senior capstone, giving students, faculty, and admins conversational insights from survey and LMS data across 90+ UCI courses. Built an NL-to-SQL agent and student-distress detection for proactive intervention, and led a cross-functional team of 4. Presented at UCI's ICS Expo and the 2026 ISLS Annual Meeting.",
       },
       {
-        period: "[ Month Year ] — [ Month Year ]",
-        org: "[ Organization ]",
-        title: "[ Job Title ]",
+        period: "Dec 2025 — Present",
+        org: "Indio Fabrics & Publishing LLC · Part-time · On-site",
+        title: "Lead UI/UX Designer",
         description:
-          "[ One or two lines on your key responsibilities and what you accomplished in this role. ]",
+          "Leading design and development of a comprehensive e-commerce platform using React, Figma, and Shopify. Built responsive UI components that improved mobile load times by 30% and desktop performance by 25%, and ran user research and A/B testing to optimize checkout flow.",
+      },
+      {
+        period: "Sep 2025 — Present",
+        org: "UCI Clean Energy Institute · Part-time · Hybrid",
+        title: "Frontend Web Developer",
+        description:
+          "Developing and maintaining responsive web interfaces for clean energy research platforms with React, JavaScript, HTML, and CSS. Integrated RESTful APIs for real-time dashboards and ensured WCAG 2.1 accessibility compliance for public-facing platforms.",
+      },
+      {
+        period: "Sep 2024 — Mar 2026",
+        org: "UC Irvine · Full-time · On-site",
+        title: "Undergraduate Student Researcher",
+        description:
+          "Primary researcher and developer on a collaborative AI education project with faculty at UCI and UCSD, building FeedbackLLM — an LLM-powered platform that automates grading and generates personalized feedback for homework and lab reports, improving grading efficiency by 62%.",
+      },
+      {
+        period: "May 2025 — Nov 2025",
+        org: "Beats by Dre · Internship · Remote",
+        title: "Data Analytics Extern",
+        description:
+          "Analyzed 1,000+ product reviews with Python and NLP to benchmark Beats against Sony and Bose, identifying key drivers of positive sentiment and building interactive dashboards to communicate market insights to product teams.",
+      },
+      {
+        period: "Jan 2024 — Mar 2024",
+        org: "Google Developer Student Clubs · Winter Project Team",
+        title: "Google Developer Club Intern",
+        description:
+          "Led a team of 4 developers to design and build NurtureSync, an Android app that tracks postpartum recovery and provides personalized support, using Java and Kotlin in Android Studio.",
       },
     ],
   },
@@ -32,11 +60,18 @@ const GROUPS = [
     accent: "outside the job description",
     roles: [
       {
-        period: "[ Month Year ] — [ Month Year ]",
-        org: "[ Organization ]",
-        title: "[ Leadership Role ]",
+        period: "Jan 2023 — Mar 2024",
+        org: "Associated Students of UC Irvine (ASUCI)",
+        title: "Student Advocate General Intern",
         description:
-          "[ One or two lines on what you led, organized, or contributed to. ]",
+          "Worked with the Student Advocate General to oversee conduct and compliance among ASUCI employees and senators, conducting investigations and drafting reports and policy recommendations.",
+      },
+      {
+        period: "Jun 2023 — Dec 2023",
+        org: "UC Irvine Athletics",
+        title: "Marketing Intern",
+        description:
+          "Coordinated NCAA game-day promotions and community outreach for UCI Athletics, planning fan engagement and youth group experiences alongside internal teams.",
       },
     ],
   },
@@ -45,10 +80,10 @@ const GROUPS = [
     accent: "the foundation",
     roles: [
       {
-        period: "Expected [ Month Year ]",
-        org: "[ University Name ]",
-        title: "[ Degree & Major ]",
-        description: "[ Honors, GPA, or relevant coursework. ]",
+        period: "Sep 2022 — Jun 2026",
+        org: "University of California, Irvine",
+        title: "B.S. Computer Science",
+        description: "Concentration in Innovation & Entrepreneurship.",
       },
     ],
   },
@@ -63,8 +98,8 @@ export default function Experience() {
           <p className="script-eyebrow">the whole journey, in order</p>
           <h2 className="section-title">Experience &amp; growth</h2>
           <p className="section-subtitle">
-            [ A sentence introducing your experience — the mix of roles,
-            projects, and leadership that shaped you. ]
+            A mix of AI/ML engineering, full-stack development, research, and
+            leadership roles across UC Irvine and industry.
           </p>
         </Reveal>
 

@@ -1,3 +1,5 @@
+import ThemeToggle from "./ThemeToggle";
+
 const LINKS = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
@@ -21,6 +23,9 @@ export default function Nav() {
               </a>
             </li>
           ))}
+          <li>
+            <ThemeToggle />
+          </li>
         </ul>
       </nav>
     </header>

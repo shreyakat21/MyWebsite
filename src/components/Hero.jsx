@@ -25,11 +25,11 @@ export default function Hero() {
         </Reveal>
 
         <Reveal as="p" className="hero-tagline" delay={260} from="translateY(26px)">
-          [ Your Field ] · [ Your Focus Area ] · [ Your Interest ]
+          AI/ML Engineering · Full-Stack Development · Data Analytics
         </Reveal>
 
         <Reveal as="p" className="hero-subline" delay={360} from="translateY(22px)">
-          [ Interest One ] × [ Interest Two ] × [ Interest Three ]
+          LLMs × RAG Pipelines × React × Python
         </Reveal>
 
         <Reveal className="hero-actions" delay={460} from="translateY(22px)">
@@ -45,11 +45,11 @@ export default function Hero() {
         </Reveal>
 
         <Reveal className="hero-meta" delay={560} from="translateY(20px)">
-          <span>[ Your School ]</span>
+          <span>UC Irvine</span>
           <span className="hero-meta-dot">✦</span>
-          <span>[ Your Achievement ]</span>
+          <span>New Grad</span>
           <span className="hero-meta-dot">✦</span>
-          <span>[ Expected Date ]</span>
+          <span>Open to Relocation</span>
         </Reveal>
       </div>
 

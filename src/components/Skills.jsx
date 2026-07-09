@@ -8,10 +8,13 @@ const STARS = [
 ];
 
 const CATEGORIES = [
-  { title: "[ Category One ]", items: ["[ Skill ]", "[ Skill ]", "[ Skill ]", "[ Skill ]"] },
-  { title: "[ Category Two ]", items: ["[ Skill ]", "[ Skill ]", "[ Skill ]"] },
-  { title: "Tools", items: ["[ Tool ]", "[ Tool ]", "[ Tool ]", "[ Tool ]"] },
-  { title: "Languages", items: ["[ Language — level ]", "[ Language — level ]"] },
+  { title: "Languages", items: ["Python", "Java", "Kotlin", "TypeScript", "SQL"] },
+  { title: "AI/ML & Data", items: ["LLMs", "RAG Pipelines", "TensorFlow", "Keras", "Scikit-learn", "OpenCV", "NLP", "Pandas", "NumPy", "NLTK"] },
+  { title: "Web & Mobile", items: ["React", "Next.js", "React Native", "Flask", "FastAPI", "Firebase", "Supabase"] },
+  { title: "Tools & Cloud", items: ["AWS", "Google Cloud", "Vercel", "Git", "Android Studio", "Shopify"] },
+  { title: "Design", items: ["Figma", "UI/UX Design", "Visual Storytelling", "Prototyping"] },
+  { title: "Certifications", items: ["AWS Cloud Practitioner", "Salesforce Certified AI Associate", "Databricks Data Engineering", "Generative AI Fundamentals", "Claude Code 101"] },
+  { title: "Languages Spoken", items: ["English", "Hindi — Native", "French — Limited Working"] },
 ];
 
 function SkillGroup({ category, groupIndex }) {

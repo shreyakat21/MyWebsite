@@ -21,8 +21,8 @@ export default function Contact() {
         </Reveal>
 
         <Reveal as="p" className="contact-intro" delay={160} from="translateY(22px)">
-          [ A line inviting people to reach out — for opportunities,
-          collaboration, or just to say hi. ]
+          I'm always happy to connect — whether about data science, software,
+          design, or just to say hi.
         </Reveal>
 
         <Reveal
@@ -31,9 +31,11 @@ export default function Contact() {
           from="translateY(24px)"
         >
           <a href="mailto:shreyakatiyar21@gmail.com">shreyakatiyar21@gmail.com</a>
-          <a href="tel:+10000000000">[ Phone Number ]</a>
-          <a href="https://linkedin.com/in/[your-handle]" target="_blank" rel="noreferrer">
+          <a href="https://linkedin.com/in/shreyakat" target="_blank" rel="noreferrer">
             LinkedIn
+          </a>
+          <a href="https://github.com/shreyakat21" target="_blank" rel="noreferrer">
+            GitHub
           </a>
           <a href="/resume.pdf" download>
             Resume ↓
@@ -43,7 +45,7 @@ export default function Contact() {
         <footer className="footer">
           made with a little too much love, by Shreya Katiyar
           <br />
-          <span className="footer-fine">© {new Date().getFullYear()} · [ Your School / Program ]</span>
+          <span className="footer-fine">© {new Date().getFullYear()} · Computer Science + Innovation & Entrepreneurship @ UC Irvine</span>
         </footer>
       </div>
     </section>
