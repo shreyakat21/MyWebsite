@@ -29,7 +29,7 @@ function SkillGroup({ category, groupIndex }) {
             className="skill-pill"
             style={{
               opacity: visible ? 1 : 0,
-              transform: visible ? "translateY(0) scale(1)" : "translateY(10px) scale(0.92)",
+              transform: visible ? undefined : "translateY(10px) scale(0.92)",
               transitionDelay: `${(groupIndex * category.items.length + i) * 34}ms`,
             }}
           >

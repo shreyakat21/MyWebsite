@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 import Stars from "../components/Stars";
 import ThemeToggle from "../components/ThemeToggle";
+import useMagnetic from "../hooks/useMagnetic";
 import "./Designs.css";
 
 const STARS = [
@@ -55,10 +56,12 @@ const DESIGNS = [
 ];
 
 export default function Designs() {
+  const magLogo = useMagnetic(0.2);
+
   return (
     <div className="designs-page">
       <header className="designs-header">
-        <Link className="nav-logo" to="/">
+        <Link ref={magLogo} className="nav-logo" to="/">
           Shreya Katiyar
         </Link>
         <div className="designs-header-right">

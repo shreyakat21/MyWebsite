@@ -19,7 +19,11 @@ export default function Reveal({
       className={className}
       style={{
         opacity: visible ? 1 : 0,
-        transform: visible ? to : from,
+        // Once revealed, drop the inline transform for the default (no persistent
+        // pose) case so CSS :hover transforms on the same element aren't blocked
+        // by inline-style specificity. Custom `to` poses (e.g. a permanent tilt)
+        // still need to stay inline to persist.
+        transform: visible ? (to === "none" ? undefined : to) : from,
         transition: `opacity ${duration}ms var(--ease), transform ${duration}ms var(--ease)`,
         transitionDelay: `${delay}ms`,
         ...style,

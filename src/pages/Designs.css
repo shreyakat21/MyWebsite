@@ -43,11 +43,18 @@
 }
 
 .designs-title {
+  display: block;
+  width: fit-content;
   font-size: clamp(28px, 5vw, 48px);
   line-height: 1.2;
   color: var(--text);
   max-width: 760px;
   margin: 0 auto;
+  transition: color 0.3s ease;
+}
+
+.designs-title:hover {
+  color: var(--accent-dark);
 }
 
 .design-list {
@@ -91,9 +98,17 @@
 }
 
 .design-text h3 {
+  display: block;
+  width: fit-content;
   font-size: clamp(22px, 3vw, 30px);
   color: var(--text);
   margin: 0 0 12px;
+  transition: color 0.25s ease, transform 0.25s var(--ease);
+}
+
+.design-text h3:hover {
+  color: var(--accent-dark);
+  transform: translateX(4px);
 }
 
 .design-text p {

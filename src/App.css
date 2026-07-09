@@ -17,7 +17,8 @@
 }
 
 .nav-logo {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   font-family: var(--serif);
   font-style: italic;
   font-weight: 700;
@@ -90,10 +91,26 @@
 }
 
 .script-eyebrow {
+  display: block;
+  width: fit-content;
   font-family: var(--script);
   color: var(--accent);
   font-size: clamp(22px, 3vw, 30px);
   margin-bottom: 10px;
+  transition: transform 0.25s var(--ease);
+}
+
+.script-eyebrow:hover {
+  transform: rotate(-2deg) scale(1.04);
+}
+
+/* Hero/Contact/Designs center their content; other sections that reuse
+   .script-eyebrow are left-aligned, so this centering is scoped here only. */
+.hero .script-eyebrow,
+.contact .script-eyebrow,
+.designs-hero .script-eyebrow {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .script-eyebrow-light {
@@ -101,15 +118,29 @@
 }
 
 .script-accent {
+  display: block;
+  width: fit-content;
   font-family: var(--script);
   color: var(--accent);
+  transition: transform 0.25s var(--ease);
+}
+
+.script-accent:hover {
+  transform: rotate(-3deg) scale(1.06);
 }
 
 .script-label {
+  display: block;
+  width: fit-content;
   font-family: var(--script);
   color: var(--accent);
   font-size: 22px;
   margin-bottom: 14px;
+  transition: transform 0.25s var(--ease);
+}
+
+.script-label:hover {
+  transform: rotate(-2deg) scale(1.04);
 }
 
 .script-label-dark {
@@ -117,9 +148,16 @@
 }
 
 .section-title {
+  display: block;
+  width: fit-content;
   font-size: clamp(32px, 5.5vw, 56px);
   color: var(--text);
   margin: 0 0 16px;
+  transition: color 0.3s ease;
+}
+
+.section-title:hover {
+  color: var(--accent-dark);
 }
 
 .section-subtitle {
@@ -193,7 +231,8 @@
 /* ---------- Buttons ---------- */
 
 .btn {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   font-family: var(--sans);
   font-weight: 600;
   font-size: 15px;
@@ -251,14 +290,24 @@
 }
 
 .hero-name {
+  display: block;
+  width: fit-content;
   font-size: clamp(60px, 13vw, 150px);
   line-height: 0.95;
   color: var(--text);
-  margin: 6px 0 0;
+  margin: 6px auto 0;
   letter-spacing: -0.015em;
+  transition: color 0.3s ease, transform 0.3s var(--ease);
+}
+
+.hero-name:hover {
+  color: var(--accent-dark);
+  transform: scale(1.015);
 }
 
 .hero-tagline {
+  display: block;
+  width: fit-content;
   font-family: var(--sans);
   font-style: normal;
   font-size: clamp(13px, 1.7vw, 18px);
@@ -266,14 +315,27 @@
   text-transform: uppercase;
   color: var(--text-muted);
   font-weight: 600;
-  margin-top: 22px;
+  margin: 22px auto 0;
+  transition: color 0.25s ease, letter-spacing 0.25s ease;
+}
+
+.hero-tagline:hover {
+  color: var(--accent);
+  letter-spacing: 0.28em;
 }
 
 .hero-subline {
+  display: block;
+  width: fit-content;
   font-family: var(--script);
   color: var(--accent-dark);
   font-size: clamp(19px, 2.6vw, 28px);
-  margin-top: 16px;
+  margin: 16px auto 0;
+  transition: transform 0.25s var(--ease);
+}
+
+.hero-subline:hover {
+  transform: rotate(-1.5deg) scale(1.03);
 }
 
 .hero-actions {
@@ -298,6 +360,17 @@
   text-transform: uppercase;
 }
 
+.hero-meta span {
+  display: block;
+  width: fit-content;
+  transition: color 0.2s ease, transform 0.2s var(--ease);
+}
+
+.hero-meta span:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
 .hero-meta-dot {
   color: var(--accent-pale);
 }
@@ -315,6 +388,11 @@
   font-family: var(--script);
   color: var(--accent);
   font-size: 22px;
+  transition: color 0.25s ease;
+}
+
+.scroll-indicator:hover {
+  color: var(--accent-dark);
 }
 
 .scroll-arrow {
@@ -364,6 +442,11 @@
   border-radius: 18px;
   border: 6px solid var(--bg-card);
   box-shadow: 0 20px 40px -18px rgba(20, 45, 60, 0.45), 0 0 0 1px var(--line);
+  transition: transform 0.4s var(--ease);
+}
+
+.about-photo-wrap:hover .about-photo {
+  transform: scale(1.04) rotate(2deg);
 }
 
 .about-photo-badge {
@@ -380,6 +463,11 @@
   color: #fff;
   font-size: 18px;
   box-shadow: 0 10px 20px -8px rgba(20, 45, 60, 0.5);
+  transition: transform 0.4s var(--ease);
+}
+
+.about-photo-wrap:hover .about-photo-badge {
+  transform: rotate(25deg) scale(1.15);
 }
 
 @media (max-width: 680px) {
@@ -405,6 +493,12 @@
   border-radius: 10px;
   padding: 28px 28px 26px;
   box-shadow: 0 18px 40px -30px rgba(20, 45, 60, 0.5);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -26px rgba(20, 45, 60, 0.55);
 }
 
 .card-facts {
@@ -436,6 +530,15 @@
   gap: 14px;
   border-bottom: 1px dashed var(--line-dashed);
   padding-bottom: 10px;
+  transition: transform 0.2s var(--ease);
+}
+
+.fact-row:hover {
+  transform: translateX(4px);
+}
+
+.fact-row:hover dd {
+  color: var(--accent-dark);
 }
 
 .fact-row:last-child {
@@ -456,6 +559,7 @@
   font-weight: 600;
   color: var(--text);
   text-align: right;
+  transition: color 0.2s ease;
 }
 
 /* ---------- Experience ---------- */
@@ -477,9 +581,16 @@
 }
 
 .exp-group-header h3 {
+  display: block;
+  width: fit-content;
   font-size: clamp(24px, 4vw, 40px);
   color: var(--text);
   margin: 0;
+  transition: color 0.25s ease;
+}
+
+.exp-group-header h3:hover {
+  color: var(--accent-dark);
 }
 
 .exp-group-header .script-accent {
@@ -530,6 +641,11 @@
   font-size: clamp(18px, 2.2vw, 22px);
   color: var(--text);
   margin: 0 0 8px;
+  transition: color 0.25s ease;
+}
+
+.exp-row:hover .exp-row-body h4 {
+  color: var(--accent-dark);
 }
 
 .exp-row-body p {
@@ -557,6 +673,8 @@
 }
 
 .skill-card h3 {
+  display: block;
+  width: fit-content;
   font-family: var(--sans);
   font-style: normal;
   font-size: 13px;
@@ -565,6 +683,11 @@
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 14px;
+  transition: transform 0.25s var(--ease);
+}
+
+.skill-card h3:hover {
+  transform: translateX(3px);
 }
 
 .skill-pills {
@@ -581,7 +704,15 @@
   font-size: 13px;
   font-weight: 600;
   color: var(--text-body);
-  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
+  transition: opacity 0.4s var(--ease), transform 0.2s var(--ease), background 0.2s ease,
+    color 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-pill:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transform: translateY(-2px) scale(1.06);
 }
 
 /* ---------- Work ---------- */
@@ -713,11 +844,19 @@
 }
 
 .contact-headline {
+  display: block;
+  width: fit-content;
   font-size: clamp(48px, 10vw, 110px);
   line-height: 0.95;
   color: var(--text-inverse);
-  margin: 0 0 30px;
+  margin: 0 auto 30px;
   letter-spacing: -0.02em;
+  transition: color 0.3s ease, transform 0.3s var(--ease);
+}
+
+.contact-headline:hover {
+  color: var(--accent-light);
+  transform: scale(1.02);
 }
 
 .contact-intro {
@@ -755,10 +894,18 @@
 }
 
 .footer {
+  display: block;
+  width: fit-content;
   font-family: var(--script);
   color: #7196ac;
   font-size: 18px;
-  margin-top: 60px;
+  margin: 60px auto 0;
+  transition: color 0.25s ease, transform 0.25s var(--ease);
+}
+
+.footer:hover {
+  color: var(--accent-light);
+  transform: rotate(-1deg) scale(1.03);
 }
 
 .footer-fine {
