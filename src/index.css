@@ -1,12 +1,27 @@
 :root {
-  --bg: #faf7f2;
-  --bg-alt: #f2ede4;
-  --text: #201f1c;
-  --text-muted: #6f6b62;
-  --accent: #a8592f;
-  --line: #ddd6c8;
+  --bg: #f5f0e8;
+  --bg-alt: #efe6da;
+  --bg-card: #fffdf8;
+  --bg-block: #d4a8b8;
+  --bg-dark: #2a2a2a;
+
+  --text: #2a2a2a;
+  --text-body: #4a4540;
+  --text-muted: #9a7480;
+
+  --accent: #c4548a;
+  --accent-dark: #7a2e4a;
+  --accent-light: #e88fb5;
+  --accent-pale: #d4a8b8;
+
+  --line: #e0d5c6;
+  --line-dashed: #e3d6c8;
+
   --serif: "Playfair Display", Georgia, serif;
+  --script: "Caveat", cursive;
   --sans: "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 
   color-scheme: light;
   font-synthesis: none;
@@ -31,13 +46,16 @@ body {
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--serif);
-  font-weight: 500;
+  font-style: italic;
+  font-weight: 700;
   line-height: 1.15;
 }
 
@@ -46,7 +64,8 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
@@ -63,4 +82,26 @@ button {
 ::selection {
   background: var(--accent);
   color: var(--bg);
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-13px);
+  }
+}
+
+@keyframes bobScroll {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(9px);
+    opacity: 1;
+  }
 }
