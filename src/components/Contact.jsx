@@ -45,7 +45,7 @@ export default function Contact() {
         <footer className="footer">
           made with a little too much love, by Shreya Katiyar
           <br />
-          <span className="footer-fine">© {new Date().getFullYear()} · Computer Science + Innovation & Entrepreneurship @ UC Irvine</span>
+          <span className="footer-fine">© {new Date().getFullYear()} · Computer Science + Informatics @ UC Irvine</span>
         </footer>
       </div>
     </section>

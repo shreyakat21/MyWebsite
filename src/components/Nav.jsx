@@ -1,4 +1,5 @@
 import ThemeToggle from "./ThemeToggle";
+import useMagnetic from "../hooks/useMagnetic";
 
 const LINKS = [
   { href: "#about", label: "About" },
@@ -9,9 +10,11 @@ const LINKS = [
 ];
 
 export default function Nav() {
+  const magLogo = useMagnetic(0.2);
+
   return (
     <header className="nav">
-      <a className="nav-logo" href="#top">
+      <a ref={magLogo} className="nav-logo" href="#top">
         Shreya Katiyar
       </a>
       <nav>

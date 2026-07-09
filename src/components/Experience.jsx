@@ -82,8 +82,8 @@ const GROUPS = [
       {
         period: "Sep 2022 — Jun 2026",
         org: "University of California, Irvine",
-        title: "B.S. Computer Science",
-        description: "Concentration in Innovation & Entrepreneurship.",
+        title: "B.S. Computer Science + Informatics",
+        description: "Minor in Innovation & Entrepreneurship.",
       },
     ],
   },

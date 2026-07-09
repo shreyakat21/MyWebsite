@@ -112,6 +112,54 @@ button {
   color: var(--bg);
 }
 
+@media (hover: hover) and (pointer: fine) {
+  body.has-custom-cursor,
+  body.has-custom-cursor a,
+  body.has-custom-cursor button {
+    cursor: none;
+  }
+}
+
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform;
+}
+
+.cursor-dot {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent-light), 0 0 3px var(--accent);
+  transition: transform 0.05s linear;
+}
+
+.cursor-ring {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1.5px solid var(--accent);
+  opacity: 0.55;
+  transition: width 0.25s var(--ease), height 0.25s var(--ease), opacity 0.25s ease,
+    background 0.25s ease;
+}
+
+.cursor-ring.cursor-ring-active {
+  width: 52px;
+  height: 52px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  opacity: 0.9;
+}
+
+.cursor-ring.cursor-ring-press {
+  width: 22px;
+  height: 22px;
+}
+
 @keyframes bob {
   0%,
   100% {

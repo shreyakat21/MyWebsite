@@ -1,5 +1,7 @@
 import Reveal from "./Reveal";
 import Stars from "./Stars";
+import Spotlight from "./Spotlight";
+import useMagnetic from "../hooks/useMagnetic";
 
 const STARS = [
   { symbol: "✦", top: "17%", left: "13%", size: 40, duration: 4.2, delay: 0 },
@@ -11,8 +13,13 @@ const STARS = [
 ];
 
 export default function Hero() {
+  const magWork = useMagnetic(0.3);
+  const magResume = useMagnetic(0.3);
+  const magContact = useMagnetic(0.3);
+
   return (
     <section id="top" className="hero">
+      <Spotlight />
       <Stars items={STARS} />
 
       <div className="hero-inner">
@@ -33,13 +40,13 @@ export default function Hero() {
         </Reveal>
 
         <Reveal className="hero-actions" delay={460} from="translateY(22px)">
-          <a className="btn btn-primary" href="#work">
+          <a ref={magWork} className="btn btn-primary" href="#work">
             View my work
           </a>
-          <a className="btn btn-outline" href="/resume.pdf" download>
+          <a ref={magResume} className="btn btn-outline" href="/resume.pdf" download>
             Resume
           </a>
-          <a className="btn btn-outline" href="#contact">
+          <a ref={magContact} className="btn btn-outline" href="#contact">
             Get in touch
           </a>
         </Reveal>

@@ -9,7 +9,8 @@ const STARS = [
 const FACTS = [
   { label: "Location", value: "Irvine, CA (open to relocation)" },
   { label: "Education", value: "UC Irvine" },
-  { label: "Focus", value: "Computer Science + Innovation & Entrepreneurship" },
+  { label: "Focus", value: "Computer Science + Informatics" },
+  { label: "Minor", value: "Innovation & Entrepreneurship" },
   { label: "Status", value: "New Grad" },
   { label: "Honors", value: "President's Volunteer Service Award (Gold)" },
 ];
@@ -19,27 +20,45 @@ export default function About() {
     <section id="about" className="section about">
       <Stars items={STARS} />
       <div className="section-inner">
-        <Reveal as="p" className="script-eyebrow" from="translateY(30px)">
-          a little about me —
-        </Reveal>
+        <div className="about-top">
+          <div className="about-text">
+            <Reveal as="p" className="script-eyebrow" from="translateY(30px)">
+              a little about me —
+            </Reveal>
 
-        <Reveal as="h2" className="about-headline" delay={100} from="translateY(34px)">
-          building meaningful, data-driven experiences that blend creativity
-          with logic.
-        </Reveal>
+            <Reveal as="h2" className="about-headline" delay={100} from="translateY(34px)">
+              building meaningful, data-driven experiences that blend creativity
+              with logic.
+            </Reveal>
 
-        <Reveal as="p" className="about-bio" delay={200} from="translateY(28px)">
-          I'm a{" "}
-          <span className="highlight">Computer Science + Innovation & Entrepreneurship</span>{" "}
-          graduate of the University of California, Irvine, with hands-on
-          experience across AI/ML, full-stack development, and data
-          analytics. I've built{" "}
-          <span className="highlight">LLM-powered apps with RAG pipelines</span>
-          , developed NLP-based market intelligence tools, and shipped
-          responsive web apps with React, Python, and SQL — and I love
-          nothing more than{" "}
-          <span className="highlight">solving a good problem</span>.
-        </Reveal>
+            <Reveal as="p" className="about-bio" delay={200} from="translateY(28px)">
+              I'm a{" "}
+              <span className="highlight">Computer Science + Informatics</span>{" "}
+              graduate of the University of California, Irvine, with a minor in
+              Innovation & Entrepreneurship and hands-on experience across
+              AI/ML, full-stack development, and data analytics. I've built{" "}
+              <span className="highlight">LLM-powered apps with RAG pipelines</span>
+              , developed NLP-based market intelligence tools, and shipped
+              responsive web apps with React, Python, and SQL — and I love
+              nothing more than{" "}
+              <span className="highlight">solving a good problem</span>.
+            </Reveal>
+          </div>
+
+          <Reveal
+            className="about-photo-wrap"
+            from="translateY(24px) rotate(6deg)"
+            to="rotate(-3deg)"
+            duration={800}
+          >
+            <img
+              className="about-photo"
+              src="/profile.png"
+              alt="Shreya Katiyar"
+            />
+            <span className="about-photo-badge">✦</span>
+          </Reveal>
+        </div>
 
         <div className="about-cards">
           <Reveal className="card card-facts" from="translateY(30px)">
