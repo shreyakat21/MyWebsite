@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import Stars from "./Stars";
+import Clipart from "./Clipart";
 
 const STARS = [
   { symbol: "✦", top: "14%", left: "16%", size: 26, duration: 4.6, delay: 0 },
@@ -7,17 +8,23 @@ const STARS = [
   { symbol: "✧", top: "24%", right: "20%", size: 16, duration: 4.7, delay: 1.2, color: "var(--accent-pale)" },
 ];
 
+const CLIPART = [
+  { icon: "heart", top: "8%", right: "8%", size: 26, speed: 0.07, duration: 4.6, color: "var(--accent-light)" },
+  { icon: "sparkle", bottom: "10%", left: "9%", size: 20, speed: -0.06, duration: 4, delay: 0.5, color: "var(--accent-light)" },
+];
+
 export default function Contact() {
   return (
     <section id="contact" className="section contact">
       <Stars items={STARS} />
+      <Clipart items={CLIPART} />
       <div className="contact-inner">
         <Reveal as="p" className="script-eyebrow script-eyebrow-light" from="translateY(26px)">
-          let's keep in touch
+          don't be a stranger
         </Reveal>
 
         <Reveal as="h2" className="contact-headline" delay={100} duration={1000} from="translateY(38px)">
-          let's talk.
+          let's build something.
         </Reveal>
 
         <Reveal as="p" className="contact-intro" delay={160} from="translateY(22px)">

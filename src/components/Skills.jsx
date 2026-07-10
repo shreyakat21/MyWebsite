@@ -1,10 +1,16 @@
 import Reveal from "./Reveal";
 import Stars from "./Stars";
+import Clipart from "./Clipart";
 import useReveal from "../hooks/useReveal";
 
 const STARS = [
   { symbol: "✦", top: "10%", left: "9%", size: 24, duration: 4.9, delay: 0.3, color: "var(--accent-pale)" },
   { symbol: "✧", bottom: "10%", right: "8%", size: 18, duration: 5.3, delay: 1, opacity: 0.6 },
+];
+
+const CLIPART = [
+  { icon: "bulb", top: "7%", right: "7%", size: 30, speed: 0.09, duration: 5.2, color: "var(--accent-dark)" },
+  { icon: "coffee", bottom: "7%", left: "8%", size: 28, speed: -0.07, duration: 4.8, delay: 0.6 },
 ];
 
 const CATEGORIES = [
@@ -45,10 +51,11 @@ export default function Skills() {
   return (
     <section id="skills" className="section skills">
       <Stars items={STARS} />
+      <Clipart items={CLIPART} />
       <div className="section-inner">
         <Reveal from="translateY(26px)">
-          <p className="script-eyebrow">what I bring to the table</p>
-          <h2 className="section-title">Skills &amp; toolkit</h2>
+          <p className="script-eyebrow">the toolkit</p>
+          <h2 className="section-title">My toolbox</h2>
         </Reveal>
         <div className="skills-grid">
           {CATEGORIES.map((cat, i) => (

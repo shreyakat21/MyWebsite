@@ -9,7 +9,7 @@ const STARS = [
 const GROUPS = [
   {
     title: "Professional Experience",
-    accent: "the day to day",
+    accent: "the 9-to-5 (ish)",
     roles: [
       {
         period: "Jan 2026 — Present",
@@ -57,7 +57,7 @@ const GROUPS = [
   },
   {
     title: "Leadership & Involvement",
-    accent: "outside the job description",
+    accent: "beyond the job title",
     roles: [
       {
         period: "Jan 2023 — Mar 2024",
@@ -77,7 +77,7 @@ const GROUPS = [
   },
   {
     title: "Education",
-    accent: "the foundation",
+    accent: "where it started",
     roles: [
       {
         period: "Sep 2022 — Jun 2026",
@@ -95,8 +95,8 @@ export default function Experience() {
       <Stars items={STARS} />
       <div className="section-inner section-inner-wide">
         <Reveal from="translateY(26px)">
-          <p className="script-eyebrow">the whole journey, in order</p>
-          <h2 className="section-title">Experience &amp; growth</h2>
+          <p className="script-eyebrow">how it all adds up</p>
+          <h2 className="section-title">My journey so far</h2>
           <p className="section-subtitle">
             A mix of AI/ML engineering, full-stack development, research, and
             leadership roles across UC Irvine and industry.

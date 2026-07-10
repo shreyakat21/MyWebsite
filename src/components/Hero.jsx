@@ -1,6 +1,7 @@
 import Reveal from "./Reveal";
 import Stars from "./Stars";
 import Spotlight from "./Spotlight";
+import Clipart from "./Clipart";
 import useMagnetic from "../hooks/useMagnetic";
 
 const STARS = [
@@ -12,6 +13,11 @@ const STARS = [
   { symbol: "✶", bottom: "30%", right: "26%", size: 22, duration: 4.4, delay: 0.9, color: "var(--accent-light)" },
 ];
 
+const CLIPART = [
+  { icon: "rocket", top: "9%", right: "6%", size: 34, speed: 0.1, duration: 5.5, color: "var(--accent-dark)" },
+  { icon: "heart", bottom: "9%", left: "6%", size: 26, speed: -0.06, duration: 4.6, delay: 0.5, color: "var(--accent-light)" },
+];
+
 export default function Hero() {
   const magWork = useMagnetic(0.3);
   const magResume = useMagnetic(0.3);
@@ -21,10 +27,11 @@ export default function Hero() {
     <section id="top" className="hero">
       <Spotlight />
       <Stars items={STARS} />
+      <Clipart items={CLIPART} />
 
       <div className="hero-inner">
         <Reveal as="p" className="script-eyebrow" from="translateY(30px)">
-          hi — let me show you around
+          hey — glad you're here
         </Reveal>
 
         <Reveal as="h1" className="hero-name" delay={120} duration={1050} from="translateY(44px)">
@@ -32,7 +39,7 @@ export default function Hero() {
         </Reveal>
 
         <Reveal as="p" className="hero-tagline" delay={260} from="translateY(26px)">
-          AI/ML Engineering · Full-Stack Development · Data Analytics
+          Product-Minded Engineer · AI/ML · Data-Driven Decisions
         </Reveal>
 
         <Reveal as="p" className="hero-subline" delay={360} from="translateY(22px)">
@@ -60,8 +67,7 @@ export default function Hero() {
         </Reveal>
       </div>
 
-      <div className="scroll-indicator">
-        scroll
+      <div className="scroll-indicator" aria-hidden="true">
         <span className="scroll-arrow">↓</span>
       </div>
     </section>

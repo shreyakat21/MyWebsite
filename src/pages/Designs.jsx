@@ -13,43 +13,43 @@ const STARS = [
 const DESIGNS = [
   {
     title: "Patient's Timeline",
-    image: "/designs/design1.png",
+    image: "/designs/design1.webp",
     description:
       "This design is a user interface for a patient progress timeline, intended for healthcare professionals to track and manage patient care over time. It features a clean, organized layout with interactive filters, detailed session logs, clinician information, and progress indicators, providing a comprehensive view of assessments, therapy sessions, and team meetings to enhance interdisciplinary coordination and patient management.",
   },
   {
     title: "Patient Management Dashboard UI",
-    image: "/designs/design2.png",
+    image: "/designs/design2.webp",
     description:
       "This design is a patient management dashboard UI for healthcare providers, allowing clinicians to quickly view, filter, and manage a list of patients. It features a structured table with patient details, treatment statuses, and physician history, along with filtering options and clear action buttons for streamlined clinical workflow and decision-making.",
   },
   {
     title: "Patient Intake Form UI",
-    image: "/designs/design3.png",
+    image: "/designs/design3.webp",
     description:
       "This design is a patient intake form UI for creating a new patient profile within a healthcare platform. It follows a clean, step-based layout and captures essential data — such as personal details, contact info, medical history, medications, and emergency contacts — while emphasizing HIPAA compliance and user-friendly input fields to streamline onboarding in clinical settings.",
   },
   {
     title: "Healthcare Professional Dashboard",
-    image: "/designs/design4.png",
+    image: "/designs/design4.webp",
     description:
       "This design is a healthcare professional's dashboard that tracks patient activity, completed assessments, and appointments. It features data visualizations and intuitive navigation to help users manage their practice efficiently.",
   },
   {
     title: "Redesigned Canvas Student Dashboard",
-    image: "/designs/design7.png",
+    image: "/designs/design7.webp",
     description:
       "This is a redesigned Canvas student dashboard, showcasing course cards, upcoming assignments, and a progress tracker. The interface uses a clean, organized layout to help students easily monitor deadlines and manage their coursework.",
   },
   {
     title: "Canvas Grade Overview Dashboard",
-    image: "/designs/design8.png",
+    image: "/designs/design8.webp",
     description:
       "This is a Canvas submission details page that displays a student's uploaded work for a design assignment, along with instructor comments and a preview of the submission. The layout allows for easy navigation between the assignment content and feedback, supporting clear communication and iterative improvement.",
   },
   {
     title: "Canvas Submission Details",
-    image: "/designs/design9.png",
+    image: "/designs/design9.webp",
     description:
       "This is a Canvas submission details page that displays a student's uploaded work for a design assignment, along with instructor comments and a preview of the submission. The layout allows for easy navigation between the assignment content and feedback, supporting clear communication and iterative improvement.",
   },
@@ -76,7 +76,7 @@ export default function Designs() {
         <Stars items={STARS} />
         <div className="section-inner">
           <Reveal as="p" className="script-eyebrow" from="translateY(26px)">
-            my designs —
+            the visual side —
           </Reveal>
           <Reveal as="h1" className="designs-title" delay={100} from="translateY(34px)">
             Exploring creativity through digital design, UI/UX, and visual
@@ -106,9 +106,9 @@ export default function Designs() {
       </section>
 
       <footer className="footer designs-footer">
-        made with a little too much love, by Shreya Katiyar
+        made with so much love, by Shreya Katiyar
         <br />
-        <span className="footer-fine">© {new Date().getFullYear()} · Computer Science & Informatics @ UC Irvine</span>
+        <span className="footer-fine">© {new Date().getFullYear()} · Computer Science + Informatics @ UC Irvine</span>
       </footer>
     </div>
   );

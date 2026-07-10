@@ -1,9 +1,15 @@
 import Reveal from "./Reveal";
 import Stars from "./Stars";
+import Clipart from "./Clipart";
 
 const STARS = [
   { symbol: "✦", top: "11%", right: "10%", size: 26, duration: 5, delay: 0.3, color: "var(--accent-pale)" },
   { symbol: "✧", bottom: "12%", left: "7%", size: 18, duration: 4.8, delay: 1.1, color: "var(--accent-light)" },
+];
+
+const CLIPART = [
+  { icon: "cloud", top: "6%", left: "5%", size: 36, speed: 0.07, duration: 6 },
+  { icon: "sparkle", bottom: "6%", right: "5%", size: 20, speed: -0.05, duration: 4.2, delay: 0.4, color: "var(--accent-light)" },
 ];
 
 const FACTS = [
@@ -12,36 +18,35 @@ const FACTS = [
   { label: "Focus", value: "Computer Science + Informatics" },
   { label: "Minor", value: "Innovation & Entrepreneurship" },
   { label: "Status", value: "New Grad" },
-  { label: "Honors", value: "President's Volunteer Service Award (Gold)" },
 ];
 
 export default function About() {
   return (
     <section id="about" className="section about">
       <Stars items={STARS} />
+      <Clipart items={CLIPART} />
       <div className="section-inner">
         <div className="about-top">
           <div className="about-text">
             <Reveal as="p" className="script-eyebrow" from="translateY(30px)">
-              a little about me —
+              the short version —
             </Reveal>
 
             <Reveal as="h2" className="about-headline" delay={100} from="translateY(34px)">
-              building meaningful, data-driven experiences that blend creativity
-              with logic.
+              turning curiosity into things people can actually use.
             </Reveal>
 
             <Reveal as="p" className="about-bio" delay={200} from="translateY(28px)">
               I'm a{" "}
               <span className="highlight">Computer Science + Informatics</span>{" "}
-              graduate of the University of California, Irvine, with a minor in
-              Innovation & Entrepreneurship and hands-on experience across
-              AI/ML, full-stack development, and data analytics. I've built{" "}
-              <span className="highlight">LLM-powered apps with RAG pipelines</span>
-              , developed NLP-based market intelligence tools, and shipped
-              responsive web apps with React, Python, and SQL — and I love
-              nothing more than{" "}
-              <span className="highlight">solving a good problem</span>.
+              graduate of UC Irvine, with a minor in Innovation &
+              Entrepreneurship — I care as much about{" "}
+              <span className="highlight">why we're building something</span>{" "}
+              as how. I've shipped AI products that turn messy data into
+              decisions people actually act on, translated research into
+              features that moved real metrics, and built full-stack apps
+              end-to-end — from problem framing to production. I love nothing
+              more than finding the right problem to solve.
             </Reveal>
           </div>
 
@@ -53,7 +58,7 @@ export default function About() {
           >
             <img
               className="about-photo"
-              src="/profile.png"
+              src="/profile.webp"
               alt="Shreya Katiyar"
             />
             <span className="about-photo-badge">✦</span>
@@ -62,7 +67,7 @@ export default function About() {
 
         <div className="about-cards">
           <Reveal className="card card-facts" from="translateY(30px)">
-            <p className="script-label">quick facts —</p>
+            <p className="script-label">at a glance —</p>
             <dl className="facts-list">
               {FACTS.map((fact) => (
                 <div className="fact-row" key={fact.label}>
@@ -74,7 +79,7 @@ export default function About() {
           </Reveal>
 
           <Reveal className="card card-looking" delay={100} from="translateY(30px)">
-            <p className="script-label script-label-dark">what I'm looking for —</p>
+            <p className="script-label script-label-dark">what I'm after —</p>
             <p className="card-looking-text">
               I'm a new grad looking for a role that combines my business
               mindset with technical skills — think{" "}
