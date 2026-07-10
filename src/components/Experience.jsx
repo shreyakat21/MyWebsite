@@ -12,7 +12,7 @@ const GROUPS = [
     accent: "the 9-to-5 (ish)",
     roles: [
       {
-        period: "Jan 2026 — Present",
+        period: "Jan 2026 — Jun 2026",
         org: "Prenostik · Full-time · On-site",
         title: "AI Lead (Senior Capstone)",
         description:
@@ -26,7 +26,7 @@ const GROUPS = [
           "Leading design and development of a comprehensive e-commerce platform using React, Figma, and Shopify. Built responsive UI components that improved mobile load times by 30% and desktop performance by 25%, and ran user research and A/B testing to optimize checkout flow.",
       },
       {
-        period: "Sep 2025 — Present",
+        period: "Sep 2025 — Jun 2026",
         org: "UCI Clean Energy Institute · Part-time · Hybrid",
         title: "Frontend Web Developer",
         description:

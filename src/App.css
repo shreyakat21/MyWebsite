@@ -427,7 +427,7 @@
 
 .about-top {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 340px;
   gap: clamp(28px, 4vw, 48px);
   align-items: start;
 }
@@ -454,42 +454,87 @@
   position: relative;
   justify-self: center;
   width: 100%;
-  max-width: 200px;
+  max-width: 320px;
+}
+
+.about-photo-scribble {
+  position: absolute;
+  inset: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  fill: none;
+  stroke: var(--accent-light);
+  stroke-width: 3;
+  stroke-linecap: round;
+  opacity: 0.7;
+  transform: rotate(-6deg);
+  pointer-events: none;
+  transition: transform 0.4s var(--ease), opacity 0.4s var(--ease);
+}
+
+.about-photo-wrap:hover .about-photo-scribble {
+  transform: rotate(-11deg) scale(1.03);
+  opacity: 0.9;
 }
 
 .about-photo {
+  position: relative;
+  z-index: 1;
+  display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 18px;
-  border: 6px solid var(--bg-card);
-  box-shadow: 0 20px 40px -18px rgba(20, 45, 60, 0.45), 0 0 0 1px var(--line);
+  border-radius: 22px;
+  border: 7px solid var(--bg-card);
+  box-shadow: 0 24px 48px -20px rgba(20, 45, 60, 0.45), 0 0 0 1px var(--line);
   transition: transform 0.4s var(--ease);
 }
 
 .about-photo-wrap:hover .about-photo {
-  transform: scale(1.04) rotate(2deg);
+  transform: scale(1.03) rotate(2deg);
 }
 
 .about-photo-badge {
   position: absolute;
-  top: -14px;
-  right: -14px;
+  z-index: 2;
+  top: -16px;
+  right: -16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
   background: var(--accent);
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   box-shadow: 0 10px 20px -8px rgba(20, 45, 60, 0.5);
   transition: transform 0.4s var(--ease);
 }
 
 .about-photo-wrap:hover .about-photo-badge {
   transform: rotate(25deg) scale(1.15);
+}
+
+.about-photo-caption {
+  position: absolute;
+  z-index: 2;
+  bottom: -14px;
+  left: -18px;
+  font-family: var(--script);
+  font-size: 18px;
+  color: var(--accent-dark);
+  background: var(--bg-card);
+  border: 1.5px dashed var(--line-dashed);
+  border-radius: 999px;
+  padding: 4px 18px;
+  transform: rotate(-4deg);
+  box-shadow: 0 10px 20px -12px rgba(20, 45, 60, 0.4);
+  transition: transform 0.3s var(--ease);
+}
+
+.about-photo-wrap:hover .about-photo-caption {
+  transform: rotate(-7deg) scale(1.05);
 }
 
 @media (max-width: 680px) {
@@ -499,7 +544,7 @@
 
   .about-photo-wrap {
     order: -1;
-    max-width: 160px;
+    max-width: 240px;
     margin: 0 auto;
   }
 }
