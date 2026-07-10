@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 600">
+  <rect width="860" height="600" fill="#ffffff"/>
+
+  <!-- header -->
+  <rect x="0" y="0" width="860" height="40" fill="#4a4a4a"/>
+  <text x="16" y="25" font-family="system-ui, sans-serif" font-size="15" fill="#c7c7c7">Predicted Grade</text>
+
+  <!-- sidebar -->
+  <rect x="0" y="40" width="64" height="560" fill="#4a4a4a"/>
+  <path d="M32 62 L44 72 V90 H20 V72 Z" fill="none" stroke="#c7c7c7" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="32" cy="79" r="2.5" fill="#c7c7c7"/>
+  <g stroke="#8a8a8a" stroke-width="1.6" fill="none">
+    <rect x="15" y="110" width="34" height="34" rx="3"/>
+    <path d="M15 110 L49 144 M49 110 L15 144"/>
+    <rect x="15" y="162" width="34" height="34" rx="3"/>
+    <path d="M15 162 L49 196 M49 162 L15 196"/>
+    <rect x="15" y="214" width="34" height="34" rx="3"/>
+    <path d="M15 214 L49 248 M49 214 L15 248"/>
+  </g>
+  <rect x="15" y="266" width="34" height="34" rx="3" fill="#5a5a5a"/>
+  <path d="M15 266 L49 300 M49 266 L15 300" stroke="#8a8a8a" stroke-width="1.6"/>
+  <rect x="64" y="271" width="14" height="24" fill="#5a5a5a"/>
+  <text x="68" y="288" font-family="system-ui, sans-serif" font-size="11" fill="#c7c7c7">&lt;</text>
+  <g stroke="#8a8a8a" stroke-width="1.6" fill="none">
+    <rect x="15" y="318" width="34" height="34" rx="3"/>
+    <path d="M15 318 L49 352 M49 318 L15 352"/>
+    <rect x="15" y="370" width="34" height="34" rx="3"/>
+    <path d="M15 370 L49 404 M49 370 L15 404"/>
+    <rect x="15" y="422" width="34" height="34" rx="3"/>
+    <path d="M15 422 L49 456 M49 422 L15 456"/>
+  </g>
+
+  <!-- main panel -->
+  <rect x="88" y="64" width="748" height="500" fill="#ffffff" stroke="#e6e6e6"/>
+  <rect x="706" y="88" width="110" height="26" rx="13" fill="#d8d8d8"/>
+
+  <rect x="112" y="140" width="220" height="170" rx="4" fill="#dcdcdc"/>
+  <text x="128" y="168" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#3a3a3a">Overall Grade</text>
+
+  <rect x="360" y="140" width="340" height="90" rx="4" fill="#dcdcdc"/>
+  <text x="376" y="168" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#3a3a3a">Input desired grade</text>
+
+  <rect x="360" y="248" width="340" height="90" rx="4" fill="#dcdcdc"/>
+  <text x="376" y="276" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#3a3a3a">Must earn on upcoming assignments</text>
+
+  <text x="112" y="378" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#3a3a3a">Assignments</text>
+  <rect x="112" y="398" width="624" height="26" rx="3" fill="#dcdcdc"/>
+  <rect x="112" y="440" width="624" height="26" rx="3" fill="#dcdcdc"/>
+  <rect x="112" y="482" width="624" height="26" rx="3" fill="#dcdcdc"/>
+</svg>

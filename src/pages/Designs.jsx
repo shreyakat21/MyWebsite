@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 import Stars from "../components/Stars";
@@ -14,12 +15,15 @@ const DESIGNS = [
   {
     title: "Patient's Timeline",
     image: "/designs/design1.webp",
+    lofi: "/designs/lofi-timeline.svg",
+    aspectRatio: "860 / 900",
     description:
       "This design is a user interface for a patient progress timeline, intended for healthcare professionals to track and manage patient care over time. It features a clean, organized layout with interactive filters, detailed session logs, clinician information, and progress indicators, providing a comprehensive view of assessments, therapy sessions, and team meetings to enhance interdisciplinary coordination and patient management.",
   },
   {
     title: "Patient Management Dashboard UI",
     image: "/designs/design2.webp",
+    lofi: "/designs/lofi-patient-table.svg",
     description:
       "This design is a patient management dashboard UI for healthcare providers, allowing clinicians to quickly view, filter, and manage a list of patients. It features a structured table with patient details, treatment statuses, and physician history, along with filtering options and clear action buttons for streamlined clinical workflow and decision-making.",
   },
@@ -38,22 +42,62 @@ const DESIGNS = [
   {
     title: "Redesigned Canvas Student Dashboard",
     image: "/designs/design7.webp",
+    lofi: "/designs/lofi-dashboard.svg",
     description:
       "This is a redesigned Canvas student dashboard, showcasing course cards, upcoming assignments, and a progress tracker. The interface uses a clean, organized layout to help students easily monitor deadlines and manage their coursework.",
   },
   {
     title: "Canvas Grade Overview Dashboard",
     image: "/designs/design8.webp",
+    lofi: "/designs/lofi-grade.svg",
     description:
-      "This is a Canvas submission details page that displays a student's uploaded work for a design assignment, along with instructor comments and a preview of the submission. The layout allows for easy navigation between the assignment content and feedback, supporting clear communication and iterative improvement.",
+      "This is a Canvas grade overview dashboard that lets students see their overall grade, plug in a target grade, and instantly see what they need to earn on upcoming assignments to hit it. A running assignments list keeps the whole picture in one place.",
   },
   {
     title: "Canvas Submission Details",
     image: "/designs/design9.webp",
+    lofi: "/designs/lofi-submission.svg",
     description:
       "This is a Canvas submission details page that displays a student's uploaded work for a design assignment, along with instructor comments and a preview of the submission. The layout allows for easy navigation between the assignment content and feedback, supporting clear communication and iterative improvement.",
   },
 ];
+
+function DesignImage({ d }) {
+  const [flipped, setFlipped] = useState(false);
+
+  if (!d.lofi) {
+    return (
+      <div className="design-img">
+        <img src={d.image} alt={d.title} loading="lazy" />
+      </div>
+    );
+  }
+
+  return (
+    <div className="design-img">
+      <button
+        type="button"
+        className={`design-flip${flipped ? " is-flipped" : ""}`}
+        onClick={() => setFlipped((f) => !f)}
+        aria-pressed={flipped}
+        aria-label={
+          flipped ? `Show finished ${d.title} design` : `Show wireframe sketch for ${d.title}`
+        }
+      >
+        <div className="design-flip-inner" style={d.aspectRatio ? { aspectRatio: d.aspectRatio } : undefined}>
+          <div className="design-flip-face design-flip-front">
+            <img src={d.image} alt={d.title} loading="lazy" />
+            <span className="design-flip-hint">click to see the sketch ✎</span>
+          </div>
+          <div className="design-flip-face design-flip-back">
+            <img src={d.lofi} alt={`${d.title} wireframe`} loading="lazy" />
+            <span className="design-flip-hint">click to flip back ↺</span>
+          </div>
+        </div>
+      </button>
+    </div>
+  );
+}
 
 export default function Designs() {
   const magLogo = useMagnetic(0.2);
@@ -94,9 +138,7 @@ export default function Designs() {
             duration={800}
             key={d.title}
           >
-            <div className="design-img">
-              <img src={d.image} alt={d.title} loading="lazy" />
-            </div>
+            <DesignImage d={d} />
             <div className="design-text">
               <h3>{d.title}</h3>
               <p>{d.description}</p>

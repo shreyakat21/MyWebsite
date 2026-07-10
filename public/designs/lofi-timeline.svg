@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1200">
+  <rect width="860" height="1200" fill="#ffffff"/>
+  <rect x="8" y="8" width="844" height="1184" rx="4" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- title -->
+  <rect x="30" y="24" width="800" height="56" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="430" y="60" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="22" fill="#1a1a1a">OPS Connect &#8211; Shared Progress Timeline</text>
+
+  <!-- tabs -->
+  <rect x="30" y="100" width="140" height="36" fill="#1a1a1a"/>
+  <text x="100" y="123" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#ffffff">Main Timeline</text>
+  <rect x="182" y="100" width="150" height="36" fill="none" stroke="#1a1a1a"/>
+  <text x="257" y="123" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#1a1a1a">OT Assessment Detail</text>
+  <rect x="344" y="100" width="140" height="36" fill="none" stroke="#1a1a1a"/>
+  <text x="414" y="123" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#1a1a1a">PT Session Detail</text>
+  <rect x="496" y="100" width="150" height="36" fill="none" stroke="#1a1a1a"/>
+  <text x="571" y="123" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#1a1a1a">SLP Evaluation Detail</text>
+  <rect x="658" y="100" width="150" height="36" fill="none" stroke="#1a1a1a"/>
+  <text x="733" y="123" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#1a1a1a">Team Meeting Detail</text>
+
+  <!-- content border -->
+  <rect x="30" y="150" width="800" height="1024" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- header row -->
+  <rect x="46" y="160" width="18" height="16" rx="2" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+  <line x1="46" y1="166" x2="64" y2="166" stroke="#1a1a1a" stroke-width="1.3"/>
+  <text x="72" y="178" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#1a1a1a">Shared Progress Timeline &#8211; Patient: John Smith</text>
+  <line x1="46" y1="196" x2="814" y2="196" stroke="#1a1a1a" stroke-width="1.3"/>
+
+  <!-- nav row -->
+  <text x="46" y="218" font-family="system-ui, sans-serif" font-size="11" fill="#333">OPS Connect | Dashboard | Patients | Timeline</text>
+  <text x="814" y="218" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#333">Dr. Sarah Wilson (PT) | Notifications (3) | Settings</text>
+  <line x1="46" y1="230" x2="814" y2="230" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- breadcrumb -->
+  <rect x="30" y="230" width="800" height="26" fill="#eeeeee"/>
+  <text x="46" y="247" font-family="system-ui, sans-serif" font-size="11" fill="#333">Home &gt; Patients &gt; John Smith (#12348) &gt; Timeline</text>
+
+  <!-- filters -->
+  <rect x="30" y="266" width="800" height="100" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+
+  <text x="46" y="286" font-family="system-ui, sans-serif" font-weight="700" font-size="10" fill="#1a1a1a">DISCIPLINE FILTER</text>
+  <rect x="46" y="294" width="34" height="26" fill="#1a1a1a"/>
+  <text x="63" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#fff">All</text>
+  <rect x="86" y="294" width="30" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="101" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#1a1a1a">OT</text>
+  <rect x="122" y="294" width="30" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="137" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#1a1a1a">PT</text>
+  <rect x="158" y="294" width="34" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="175" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#1a1a1a">SLP</text>
+  <rect x="198" y="294" width="76" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="236" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#1a1a1a">Meetings</text>
+
+  <text x="300" y="286" font-family="system-ui, sans-serif" font-weight="700" font-size="10" fill="#1a1a1a">ENTRY TYPE</text>
+  <rect x="300" y="294" width="34" height="26" fill="#1a1a1a"/>
+  <text x="317" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#fff">All</text>
+  <rect x="340" y="294" width="90" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="385" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#1a1a1a">Assessments</text>
+  <rect x="436" y="294" width="68" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="470" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#1a1a1a">Sessions</text>
+  <rect x="510" y="294" width="52" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="536" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#1a1a1a">Goals</text>
+  <rect x="568" y="294" width="54" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="595" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" fill="#1a1a1a">Notes</text>
+
+  <text x="650" y="286" font-family="system-ui, sans-serif" font-weight="700" font-size="10" fill="#1a1a1a">DATE RANGE</text>
+  <rect x="650" y="294" width="90" height="24" fill="none" stroke="#1a1a1a"/>
+  <text x="658" y="310" font-family="system-ui, sans-serif" font-style="italic" font-size="9" fill="#999">Start Date</text>
+  <rect x="650" y="324" width="90" height="24" fill="none" stroke="#1a1a1a"/>
+  <text x="658" y="340" font-family="system-ui, sans-serif" font-style="italic" font-size="9" fill="#999">End Date</text>
+  <rect x="746" y="292" width="84" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="788" y="309" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" fill="#1a1a1a">Search Timeline</text>
+  <rect x="746" y="322" width="84" height="26" fill="none" stroke="#1a1a1a"/>
+  <text x="788" y="339" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" fill="#1a1a1a">Export View</text>
+
+  <!-- entry 1: OT COPM -->
+  <circle cx="40" cy="388" r="6" fill="#3b82f6"/>
+  <text x="56" y="392" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#1a1a1a">Occupational Therapy &#8211; COPM Assessment</text>
+  <text x="814" y="392" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#555">August 28, 2025 &#8211; 2:30 PM</text>
+  <rect x="56" y="402" width="150" height="20" rx="10" fill="none" stroke="#3b82f6"/>
+  <text x="131" y="416" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" fill="#3b82f6">OCCUPATIONAL THERAPY</text>
+  <text x="56" y="440" font-family="system-ui, sans-serif" font-size="11" fill="#333">Clinician: Dr. Jennifer Martinez, OTR/L</text>
+  <text x="56" y="455" font-family="system-ui, sans-serif" font-size="11" fill="#333">Assessment Type: Canadian Occupational Performance Measure (COPM)</text>
+  <text x="56" y="470" font-family="system-ui, sans-serif" font-size="11" fill="#333">Key Findings: Improved performance in self-care activities (7.2/10, up from 6.1)</text>
+  <text x="56" y="485" font-family="system-ui, sans-serif" font-size="11" fill="#333">Goals Updated: 3 new functional goals established</text>
+  <text x="56" y="505" font-family="system-ui, sans-serif" font-style="italic" font-size="10" fill="#888">Click to view full assessment details &#8594;</text>
+  <line x1="40" y1="520" x2="820" y2="520" stroke="#ddd"/>
+
+  <!-- entry 2: PT Balance -->
+  <circle cx="40" cy="538" r="6" fill="#ef4444"/>
+  <text x="56" y="542" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#1a1a1a">Physical Therapy &#8211; Balance Training Session</text>
+  <text x="814" y="542" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#555">August 26, 2025 &#8211; 10:00 AM</text>
+  <rect x="56" y="552" width="130" height="20" rx="10" fill="none" stroke="#ef4444"/>
+  <text x="121" y="566" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" fill="#ef4444">PHYSICAL THERAPY</text>
+  <text x="56" y="590" font-family="system-ui, sans-serif" font-size="11" fill="#333">Clinician: Dr. Michael Chen, DPT</text>
+  <text x="56" y="605" font-family="system-ui, sans-serif" font-size="11" fill="#333">Session Type: Balance and Gait Training</text>
+  <text x="56" y="620" font-family="system-ui, sans-serif" font-size="11" fill="#333">Duration: 45 minutes</text>
+  <text x="56" y="635" font-family="system-ui, sans-serif" font-size="11" fill="#333">Progress: Berg Balance Scale improved to 45/56 (was 42/56)</text>
+  <text x="56" y="650" font-family="system-ui, sans-serif" font-size="11" fill="#333">Next Steps: Continue balance progression, add weight-bearing exercises</text>
+  <text x="56" y="670" font-family="system-ui, sans-serif" font-style="italic" font-size="10" fill="#888">Click to view full session notes &#8594;</text>
+  <line x1="40" y1="685" x2="820" y2="685" stroke="#ddd"/>
+
+  <!-- entry 3: SLP -->
+  <circle cx="40" cy="703" r="6" fill="#22c55e"/>
+  <text x="56" y="707" font-family="system-ui, sans-serif" font-weight="700" font-size="13.5" fill="#1a1a1a">Speech Language Pathology &#8211; Comprehensive Evaluation</text>
+  <text x="814" y="707" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#555">August 24, 2025 &#8211; 1:15 PM</text>
+  <rect x="56" y="717" width="195" height="20" rx="10" fill="none" stroke="#22c55e"/>
+  <text x="153" y="731" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" fill="#22c55e">SPEECH LANGUAGE PATHOLOGY</text>
+  <text x="56" y="755" font-family="system-ui, sans-serif" font-size="11" fill="#333">Clinician: Dr. Amanda Rodriguez, CCC-SLP</text>
+  <text x="56" y="770" font-family="system-ui, sans-serif" font-size="11" fill="#333">Assessment Type: Comprehensive Speech and Language Evaluation</text>
+  <text x="56" y="785" font-family="system-ui, sans-serif" font-size="11" fill="#333">Areas Assessed: Articulation, fluency, voice, language comprehension</text>
+  <text x="56" y="800" font-family="system-ui, sans-serif" font-size="11" fill="#333">Status: Baseline established, mild articulation concerns identified</text>
+  <text x="56" y="815" font-family="system-ui, sans-serif" font-size="11" fill="#333">Recommendations: Weekly therapy sessions recommended</text>
+  <text x="56" y="835" font-family="system-ui, sans-serif" font-style="italic" font-size="10" fill="#888">Click to view full evaluation report &#8594;</text>
+  <line x1="40" y1="850" x2="820" y2="850" stroke="#ddd"/>
+
+  <!-- entry 4: Team Meeting -->
+  <circle cx="40" cy="868" r="6" fill="#eab308"/>
+  <text x="56" y="872" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#1a1a1a">Interdisciplinary Team Meeting</text>
+  <text x="814" y="872" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#555">August 22, 2025 &#8211; 11:00 AM</text>
+  <rect x="56" y="882" width="140" height="20" rx="10" fill="none" stroke="#eab308"/>
+  <text x="126" y="896" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" fill="#a16207">TEAM COORDINATION</text>
+  <text x="56" y="920" font-family="system-ui, sans-serif" font-size="11" fill="#333">Attendees: Dr. Martinez (OT), Dr. Chen (PT), Dr. Rodriguez (SLP), Dr. Thompson (Physician)</text>
+  <text x="56" y="935" font-family="system-ui, sans-serif" font-size="11" fill="#333">Meeting Type: Care Planning and Goal Alignment</text>
+  <text x="56" y="950" font-family="system-ui, sans-serif" font-size="11" fill="#333">Duration: 30 minutes</text>
+  <text x="56" y="965" font-family="system-ui, sans-serif" font-size="11" fill="#333">Outcomes: Unified care plan established, discharge goals set</text>
+  <text x="56" y="980" font-family="system-ui, sans-serif" font-size="11" fill="#333">Action Items: 5 tasks assigned across disciplines</text>
+  <text x="56" y="1000" font-family="system-ui, sans-serif" font-style="italic" font-size="10" fill="#888">Click to view meeting minutes and action items &#8594;</text>
+  <line x1="40" y1="1015" x2="820" y2="1015" stroke="#ddd"/>
+
+  <!-- entry 5: PT Initial Eval -->
+  <circle cx="40" cy="1033" r="6" fill="#ef4444"/>
+  <text x="56" y="1037" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#1a1a1a">Physical Therapy &#8211; Initial Evaluation</text>
+  <text x="814" y="1037" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#555">August 20, 2025 &#8211; 9:00 AM</text>
+  <rect x="56" y="1047" width="130" height="20" rx="10" fill="none" stroke="#ef4444"/>
+  <text x="121" y="1061" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" fill="#ef4444">PHYSICAL THERAPY</text>
+  <text x="56" y="1085" font-family="system-ui, sans-serif" font-size="11" fill="#333">Clinician: Dr. Michael Chen, DPT</text>
+  <text x="56" y="1100" font-family="system-ui, sans-serif" font-size="11" fill="#333">Assessment Type: Comprehensive PT Initial Evaluation</text>
+  <text x="56" y="1115" font-family="system-ui, sans-serif" font-size="11" fill="#333">Key Findings: Moderate balance deficits, reduced lower extremity strength</text>
+  <text x="56" y="1130" font-family="system-ui, sans-serif" font-size="11" fill="#333">Plan: 2x/week PT sessions focusing on balance and strengthening</text>
+  <text x="56" y="1150" font-family="system-ui, sans-serif" font-style="italic" font-size="10" fill="#888">Click to view full evaluation &#8594;</text>
+</svg>
