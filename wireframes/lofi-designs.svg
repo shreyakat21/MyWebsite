@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1150" width="860" height="1150" font-family="system-ui, sans-serif">
+  <rect width="860" height="1150" fill="#ffffff"/>
+
+  <!-- header -->
+  <text x="30" y="36" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#1a1a1a">Shreya Katiyar</text>
+  <text x="770" y="36" font-size="11" fill="#333">&#8592; Back to portfolio</text>
+  <circle cx="822" cy="30" r="11" fill="none" stroke="#1a1a1a"/>
+  <line x1="0" y1="60" x2="860" y2="60" stroke="#ddd"/>
+
+  <!-- hero -->
+  <text x="430" y="110" text-anchor="middle" font-style="italic" font-size="14" fill="#666">the visual side &#8212;</text>
+  <text x="430" y="150" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="20" fill="#1a1a1a">Exploring creativity through digital design, UI/UX, and</text>
+  <text x="430" y="176" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="20" fill="#1a1a1a">visual storytelling.</text>
+  <line x1="0" y1="220" x2="860" y2="220" stroke="#ddd"/>
+
+  <!-- row 1: image left, text right -->
+  <rect x="60" y="250" width="320" height="180" rx="6" fill="#dcdcdc"/>
+  <text x="420" y="272" font-weight="700" font-size="16" fill="#1a1a1a">Patient's Timeline</text>
+  <rect x="420" y="292" width="360" height="8" fill="#e2e2e2"/>
+  <rect x="420" y="308" width="340" height="8" fill="#e2e2e2"/>
+  <rect x="420" y="324" width="320" height="8" fill="#e2e2e2"/>
+  <rect x="420" y="340" width="280" height="8" fill="#e2e2e2"/>
+
+  <!-- row 2: text left, image right (reversed) -->
+  <text x="60" y="480" font-weight="700" font-size="16" fill="#1a1a1a">Patient Management Dashboard UI</text>
+  <rect x="60" y="500" width="360" height="8" fill="#e2e2e2"/>
+  <rect x="60" y="516" width="340" height="8" fill="#e2e2e2"/>
+  <rect x="60" y="532" width="320" height="8" fill="#e2e2e2"/>
+  <rect x="480" y="460" width="320" height="180" rx="6" fill="#dcdcdc"/>
+
+  <!-- row 3: image left -->
+  <rect x="60" y="670" width="320" height="180" rx="6" fill="#dcdcdc"/>
+  <text x="420" y="692" font-weight="700" font-size="16" fill="#1a1a1a">Patient Intake Form UI</text>
+  <rect x="420" y="712" width="360" height="8" fill="#e2e2e2"/>
+  <rect x="420" y="728" width="340" height="8" fill="#e2e2e2"/>
+  <rect x="420" y="744" width="300" height="8" fill="#e2e2e2"/>
+
+  <!-- row 4: text left (reversed) -->
+  <text x="60" y="900" font-weight="700" font-size="16" fill="#1a1a1a">Healthcare Professional Dashboard</text>
+  <rect x="60" y="920" width="360" height="8" fill="#e2e2e2"/>
+  <rect x="60" y="936" width="320" height="8" fill="#e2e2e2"/>
+  <rect x="480" y="880" width="320" height="180" rx="6" fill="#dcdcdc"/>
+
+  <text x="430" y="1090" text-anchor="middle" font-style="italic" font-size="12" fill="#999">+ 3 more case studies (with click-to-flip lofi sketches) &#183;&#183;&#183;</text>
+
+  <line x1="0" y1="1110" x2="860" y2="1110" stroke="#ddd"/>
+  <text x="430" y="1134" text-anchor="middle" font-size="10" fill="#888">made with so much love, by Shreya Katiyar</text>
+</svg>

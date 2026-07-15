@@ -21,6 +21,16 @@ src/
 public/         images, resume, favicon
 ```
 
+## Wireframes
+
+Lofi sketches of the two pages, for reference:
+
+**Home** (`/`)
+![Home page wireframe](wireframes/lofi-home.svg)
+
+**Designs** (`/designs`)
+![Designs page wireframe](wireframes/lofi-designs.svg)
+
 ## Design notes
 
 - Palette + fonts are all CSS variables — no hardcoded colors in components
