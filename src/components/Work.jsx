@@ -1,6 +1,7 @@
 import Reveal from "./Reveal";
 import Stars from "./Stars";
 import Clipart from "./Clipart";
+import { withBase } from "../lib/asset";
 
 const STARS = [
   { symbol: "✦", top: "9%", left: "10%", size: 24, duration: 4.8, delay: 0.4, color: "var(--accent-pale)" },
@@ -88,13 +89,13 @@ export default function Work() {
           as="a"
           className="work-featured"
           from="translateY(28px)"
-          href={FEATURED.link}
+          href={withBase(FEATURED.link)}
           target="_blank"
           rel="noreferrer"
         >
           <img
             className="work-featured-thumb"
-            src={FEATURED.image}
+            src={withBase(FEATURED.image)}
             alt={FEATURED.title}
             loading="lazy"
           />
@@ -113,7 +114,7 @@ export default function Work() {
               className="work-card"
               from="translateY(24px)"
               delay={(i % 3) * 100}
-              href={project.link}
+              href={project.link.startsWith("/") ? withBase(project.link) : project.link}
               target="_blank"
               rel="noreferrer"
               key={project.title}

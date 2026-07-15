@@ -1,6 +1,7 @@
 import Reveal from "./Reveal";
 import Stars from "./Stars";
 import Clipart from "./Clipart";
+import { withBase } from "../lib/asset";
 
 const STARS = [
   { symbol: "✦", top: "11%", right: "10%", size: 26, duration: 5, delay: 0.3, color: "var(--accent-pale)" },
@@ -59,7 +60,7 @@ export default function About() {
             <svg className="about-photo-scribble" viewBox="0 0 240 240" aria-hidden="true">
               <path d="M118 6C170 2 214 40 220 96C226 152 196 208 138 218C80 228 24 196 12 138C0 80 40 26 96 12C104 10 110 8 118 6Z" />
             </svg>
-            <img className="about-photo" src="/profile.webp" alt="Shreya Katiyar" />
+            <img className="about-photo" src={withBase("/profile.webp")} alt="Shreya Katiyar" />
             <span className="about-photo-badge">✦</span>
             <span className="about-photo-caption">that's me!</span>
           </Reveal>

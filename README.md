@@ -37,9 +37,15 @@ Lofi sketches of the two pages, for reference:
 - Dark/light mode is saved to `localStorage`, applied before React loads (no flash on refresh)
 - Fonts: Lobster/Playfair for headings, Kalam (handwritten) for little accent lines, Quicksand for body text
 
-## Known issue
+## Deployment
 
-GitHub Pages doesn't support client-side routing out of the box, so a direct link to `/designs` would 404 if deployed there as-is. Would need the `404.html` redirect trick or `HashRouter` to fix.
+Live at **https://shreyakat21.github.io/MyWebsite/**, deployed automatically by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `main`.
+
+Since this is a project site (not a `<user>.github.io` repo), it's served from a `/MyWebsite/` subpath, which normally breaks a few things — handled like this:
+- `vite.config.js` sets `base: '/MyWebsite/'` only when the CI build sets `GITHUB_PAGES=true` (local dev still runs at `/`)
+- `src/lib/asset.js`'s `withBase()` prefixes hardcoded asset paths (images, resume, etc.) so they resolve under the subpath too
+- `BrowserRouter` gets `basename={import.meta.env.BASE_URL}` so client-side routes match
+- GitHub Pages has no server-side routing, so a direct link to `/designs` would normally 404 — `scripts/copy-404.mjs` copies `index.html` to `404.html` after build so Pages falls back to the SPA shell instead of a real error page
 
 ## Run it locally
 

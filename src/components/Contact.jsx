@@ -1,6 +1,7 @@
 import Reveal from "./Reveal";
 import Stars from "./Stars";
 import Clipart from "./Clipart";
+import { withBase } from "../lib/asset";
 
 const STARS = [
   { symbol: "✦", top: "14%", left: "16%", size: 26, duration: 4.6, delay: 0 },
@@ -50,7 +51,7 @@ export default function Contact() {
           <a href="https://github.com/shreyakat21" target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a href="/resume.pdf" download>
+          <a href={withBase("/resume.pdf")} download>
             Resume ↓
           </a>
         </Reveal>

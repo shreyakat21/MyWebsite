@@ -3,6 +3,7 @@ import Stars from "./Stars";
 import Spotlight from "./Spotlight";
 import Clipart from "./Clipart";
 import useMagnetic from "../hooks/useMagnetic";
+import { withBase } from "../lib/asset";
 
 const STARS = [
   { symbol: "✦", top: "17%", left: "13%", size: 40, duration: 4.2, delay: 0 },
@@ -50,7 +51,7 @@ export default function Hero() {
           <a ref={magWork} className="btn btn-primary" href="#work">
             View my work
           </a>
-          <a ref={magResume} className="btn btn-outline" href="/resume.pdf" download>
+          <a ref={magResume} className="btn btn-outline" href={withBase("/resume.pdf")} download>
             Resume
           </a>
           <a ref={magContact} className="btn btn-outline" href="#contact">

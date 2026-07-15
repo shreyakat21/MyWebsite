@@ -4,6 +4,7 @@ import Reveal from "../components/Reveal";
 import Stars from "../components/Stars";
 import ThemeToggle from "../components/ThemeToggle";
 import useMagnetic from "../hooks/useMagnetic";
+import { withBase } from "../lib/asset";
 import "./Designs.css";
 
 const STARS = [
@@ -68,7 +69,7 @@ function DesignImage({ d }) {
   if (!d.lofi) {
     return (
       <div className="design-img">
-        <img src={d.image} alt={d.title} loading="lazy" />
+        <img src={withBase(d.image)} alt={d.title} loading="lazy" />
       </div>
     );
   }
@@ -86,11 +87,11 @@ function DesignImage({ d }) {
       >
         <div className="design-flip-inner" style={d.aspectRatio ? { aspectRatio: d.aspectRatio } : undefined}>
           <div className="design-flip-face design-flip-front">
-            <img src={d.image} alt={d.title} loading="lazy" />
+            <img src={withBase(d.image)} alt={d.title} loading="lazy" />
             <span className="design-flip-hint">click to see the sketch ✎</span>
           </div>
           <div className="design-flip-face design-flip-back">
-            <img src={d.lofi} alt={`${d.title} wireframe`} loading="lazy" />
+            <img src={withBase(d.lofi)} alt={`${d.title} wireframe`} loading="lazy" />
             <span className="design-flip-hint">click to flip back ↺</span>
           </div>
         </div>
