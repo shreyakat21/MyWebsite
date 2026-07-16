@@ -39,13 +39,11 @@ Lofi sketches of the two pages, for reference:
 
 ## Deployment
 
-Live at **https://shreyakat21.github.io/MyWebsite/**, deployed automatically by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `main`.
+Live at **https://shreyakatiyar.com**, deployed automatically by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `main`.
 
-Since this is a project site (not a `<user>.github.io` repo), it's served from a `/MyWebsite/` subpath, which normally breaks a few things — handled like this:
-- `vite.config.js` sets `base: '/MyWebsite/'` only when the CI build sets `GITHUB_PAGES=true` (local dev still runs at `/`)
-- `src/lib/asset.js`'s `withBase()` prefixes hardcoded asset paths (images, resume, etc.) so they resolve under the subpath too
-- `BrowserRouter` gets `basename={import.meta.env.BASE_URL}` so client-side routes match
-- GitHub Pages has no server-side routing, so a direct link to `/designs` would normally 404 — `scripts/copy-404.mjs` copies `index.html` to `404.html` after build so Pages falls back to the SPA shell instead of a real error page
+Custom domain via `public/CNAME` (copied into every build), pointed at GitHub Pages through 4 A records at the registrar (IONOS) — the site serves from the domain root, so no base-path juggling is needed (`vite.config.js` just uses the default `/`). `src/lib/asset.js`'s `withBase()` and `BrowserRouter`'s `basename` are still in place from when this was a `/MyWebsite/` project-page subpath, but they're now harmless no-ops since `BASE_URL` is `/`.
+
+GitHub Pages still has no server-side routing, so a direct link to `/designs` would normally 404 — `scripts/copy-404.mjs` copies `index.html` to `404.html` after build so Pages falls back to the SPA shell instead of a real error page.
 
 ## Run it locally
 
